@@ -84,7 +84,7 @@ public class Methods {
 //    public static double storeSalary(Scanner input) {
 //        return  input.nextDouble();
 //    }
-    /*******************************************************************************************************************
+    /*
     public static void main(String[] args) {
         try(Scanner input = new Scanner(System.in)) {
             // Collecting number of users
@@ -117,8 +117,8 @@ public class Methods {
             }
         }
     }
-    ********************************************************************************************************************/
-//    public static void main(String[] args) {
+*/
+/*    public static void main(String[] args) {
 //        System.out.println("Choose from the following options: ");
 //        System.out.println("1. Calculate the area of a circle");
 //        System.out.println("2. Calculate the circumference of a circle");
