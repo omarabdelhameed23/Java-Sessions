@@ -118,33 +118,51 @@ public class Methods {
         }
     }
     ********************************************************************************************************************/
+//    public static void main(String[] args) {
+//        System.out.println("Choose from the following options: ");
+//        System.out.println("1. Calculate the area of a circle");
+//        System.out.println("2. Calculate the circumference of a circle");
+//
+//        try(Scanner input = new Scanner(System.in)){
+//            int choice = input.nextInt();
+//            if(choice == 1 || choice == 2) {
+//                System.out.println("Input the circle's radius: ");
+//                double radius = input.nextDouble();
+//                if (radius <= 0) {
+//                    System.out.println("Radius must be a positive number.");
+//                } else if (choice == 1) {
+//                    System.out.println("Area of the circle is: " + circleArea(radius));
+//                } else {
+//                    System.out.println("Circumference of the circle is: " + circleCircumference(radius));
+//                }
+//            } else {
+//                System.out.println("Invalid choice. Please select either 1 or 2.");
+//            }
+//        }
+//    }
+//
+//    public static double circleCircumference(double radius) {
+//        return 2 * Math.PI * radius;
+//    }
+//    public static  double circleArea(double radius) {
+//        return Math.PI * Math.pow(radius, 2);
+//    }
+    /******************************************************************************************************************/
     public static void main(String[] args) {
-        System.out.println("Choose from the following options: ");
-        System.out.println("1. Calculate the area of a circle");
-        System.out.println("2. Calculate the circumference of a circle");
+        try(Scanner input = new Scanner(System.in)) {
+            System.out.println("Hi!. The purpose of this program is to find whether the number you entered is even or odd.");
+            System.out.println("Input a number: ");
+            int num = input.nextInt();
+            isEven(num);
 
-        try(Scanner input = new Scanner(System.in)){
-            int choice = input.nextInt();
-            if(choice == 1 || choice == 2) {
-                System.out.println("Input the circle's radius: ");
-                double radius = input.nextDouble();
-                if (radius <= 0) {
-                    System.out.println("Radius must be a positive number.");
-                } else if (choice == 1) {
-                    System.out.println("Area of the circle is: " + circleArea(radius));
-                } else {
-                    System.out.println("Circumference of the circle is: " + circleCircumference(radius));
-                }
-            } else {
-                System.out.println("Invalid choice. Please select either 1 or 2.");
-            }
         }
-    }
 
-    public static double circleCircumference(double radius) {
-        return 2 * Math.PI * radius;
     }
-    public static  double circleArea(double radius) {
-        return Math.PI * Math.pow(radius, 2);
+    public static void isEven(int number) {
+        if(number % 2 == 0) {
+            System.out.println("The entered number is even.");
+        }else {
+            System.out.println("The entered number is odd.");
+        }
     }
 }
